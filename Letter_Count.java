@@ -1,4 +1,4 @@
-// find letter count in given sentence:
+// find the letter count in given sentence:
 
 import java.util.Scanner;
 
