@@ -20,7 +20,7 @@ public class Letter_Count{
                 Count++;
             }
         }
-        System.out.println("No of Sentence Count is : "+Count);
+        System.out.println("No of Letter Count is : "+Count);
 
     }
 }
