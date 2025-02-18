@@ -1,34 +1,23 @@
-/* To create an Abstract class Animal With an Abstract method called Sound() 
-   create Subclasses Lion and Tiger that extends the Animal class and implement
-   the Sound() method to make specific sound for each animal */  
+/* write a java program create a class called Animal with a method called MakeSound()
+   create a subclass called cat that override the MakeSound() method to bark */
 
-
-//Abstract class
-abstract class Animal{
-    // Abstract Method
-    abstract void Sound();
-}
-//Subclass of Animal
-class Lion extends Animal{
-    void Sound(){
-        System.out.println("Lion roars :Roarrrr!");
+   
+class Animal{
+     void MakeSound(){
+        System.out.println("Animal MakeSound...");
+        
     }
 }
-
-//Subclass of Animal
-class Tiger extends Animal{
-    void Sound(){
-        System.out.println("Tiger growls : Grrrrr!");
-    }
-}
-
-public class TestAnimal{
-    public static void main(String args[]){
-        //Create object of Subclasses
-        Animal L1 = new Lion();
-        Animal T1 = new Tiger();
-
-        L1.Sound();
-        T1.Sound();
+// Subclass of Animal
+class Cat extends Animal{
+     void MakeSound(){
+        System.out.println("Mewo Mewo...");
     } 
+}
+// Main class
+public class TestAnimal{
+    public static void main(String[] args){
+       Animal Mycat = new Cat();
+        Mycat.MakeSound();
+    }
 }
